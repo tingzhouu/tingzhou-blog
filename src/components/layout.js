@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { MDXProvider } from "@mdx-js/react"
 
 import { rhythm, scale } from "../utils/typography"
 import "./globalStyles.css"
@@ -58,7 +59,13 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <header>{header}</header>
-      <main>{children}</main>
+      <MDXProvider
+        components={{
+          pre: props => <pre style={{ fontSize: "0.9rem" }} {...props} />,
+        }}
+      >
+        {children}
+      </MDXProvider>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
