@@ -78,13 +78,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Ting Zhou's Blog`,
+        short_name: `tingzhouu`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        // icon: `content/assets/gatsby-icon.png`,
+        icons: [
+          {
+            src: "content/assets/android-chrome-192x192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "content/assets/android-chrome-512x512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "content/assets/apple-touch-icon.png",
+            sizes: "180x180",
+            type: "image/png",
+          },
+        ],
       },
     },
     `gatsby-plugin-react-helmet`,
