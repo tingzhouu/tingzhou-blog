@@ -66,9 +66,21 @@ const Layout = ({ location, title, children }) => {
         {children}
       </MDXProvider>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a
+          href="https://mobile.twitter.com/tingzhouu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          twitter
+        </a>{" "}
+        &bull;{" "}
+        <a
+          href="https://github.com/tingzhouu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github
+        </a>
       </footer>
     </div>
   )
