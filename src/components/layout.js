@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import "./globalStyles.css"
 
 const Layout = ({ location, title, children }) => {
@@ -13,7 +13,6 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
         }}
